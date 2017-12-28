@@ -1,3 +1,3 @@
 **SesliPlayer**
 
-Android Music Player with voice search.
+Android Music Player with voice search. 🇹🇷
