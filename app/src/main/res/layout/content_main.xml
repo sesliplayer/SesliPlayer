@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainbg"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="bilgi.sesliplayer.MainActivity"
+    >
+
+    <include
+        layout="@layout/content_music_list"
+        android:layout_width="0dp"
+        android:layout_height="403dp"
+        android:layout_marginBottom="96dp"
+        app:layout_constraintBottom_toTopOf="@+id/seekBar2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:background="@drawable/transparent"
+        android:padding="0dp"
+        android:paddingTop="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+
+        <ImageButton
+            android:id="@+id/geriBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@+id/playButton"
+            android:layout_marginRight="45dp"
+            android:layout_toLeftOf="@+id/playButton"
+            android:background="@drawable/twoback"
+            android:scaleType="fitCenter"
+            tools:ignore="ContentDescription" />
+
+        <ImageButton
+            android:id="@+id/ileriBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@+id/playButton"
+            android:layout_marginLeft="45dp"
+            android:layout_toRightOf="@+id/playButton"
+            android:background="@drawable/twonext"
+            android:scaleType="fitCenter"
+            tools:ignore="ContentDescription" />
+
+        <ImageButton
+            android:id="@+id/playButton"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/play"
+            android:scaleType="fitCenter"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/bitisSuresi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/seekBar2"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="0dp"
+            android:text="bitis suresi"
+            android:textAlignment="textEnd"
+            tools:ignore="NotSibling" />
+
+        <TextView
+            android:id="@+id/suankiZaman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/seekBar2"
+            android:layout_marginLeft="10dp"
+            android:text="suanki sure"
+            android:textAlignment="textStart"
+            tools:ignore="NotSibling" />
+    </RelativeLayout>
+
+    <SeekBar
+        android:id="@+id/seekBar2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="0dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:max="100"
+        android:padding="0dp"
+        android:paddingBottom="0dp"
+        android:paddingEnd="0dp"
+        android:paddingLeft="0dp"
+        android:progress="0"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <ImageButton
+        android:id="@+id/ses"
+        android:layout_width="40dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/mic"
+        android:contentDescription=""
+        app:layout_constraintBottom_toTopOf="@+id/seekBar2"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:ignore="ContentDescription"
+        android:layout_marginEnd="8dp" />
+
+</android.support.constraint.ConstraintLayout>

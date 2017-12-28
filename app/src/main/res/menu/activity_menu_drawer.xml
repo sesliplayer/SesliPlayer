@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_muzik_ekle"
+            android:icon="@drawable/muzik_ekle"
+            android:title="Müzik Ekle" />
+        <item
+            android:id="@+id/menu_kategori"
+            android:icon="@drawable/kategori"
+            android:title="Filtreleme" />
+        <item
+            android:id="@+id/menu_shuffle"
+            android:icon="@drawable/shuffle"
+            android:title="Karıştır" />
+
+    </group>
+
+
+</menu>
